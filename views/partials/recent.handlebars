@@ -1,0 +1,8 @@
+<div class="recent-photos">
+	<h2>Recent</h2>
+	<ul class="recent photo-list">
+	    {{#each allPhotos}}
+	      <li class="{{list_classes}}"><img src="{{this.image_url}}" alt="{{this.name}}" class="img-responsive"></li>
+	    {{/each}}
+	</ul>
+</div>

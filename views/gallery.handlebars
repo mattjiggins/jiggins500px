@@ -1,0 +1,17 @@
+<main id="gallery">
+	<h2>{{gallery.name}}</h2>
+	
+	<ul class="gallery-grid">
+	    {{#each this.photos}}
+	      <li class="gallery-item {{list_classes}}">
+			  <figure>
+				<h3 class="sr-only">{{this.name}}</h3>
+				<img src="{{this.custom_thumbnail}}" alt="{{this.name}}" class="img-responsive {{this.image_classes}}" data-jslghtbx="{{this.custom_full}}">
+				<figcaption>
+					<p class="title">{{this.name}}</p>
+				</figcaption>
+			  </figure>
+		  </li>
+	    {{/each}}
+	</ul>
+</main>

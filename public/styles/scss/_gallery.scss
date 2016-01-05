@@ -1,0 +1,26 @@
+main#gallery {
+	h2 {
+		text-align: center;
+		margin: 0;
+		font-size: 1.1em;
+	}
+}
+
+.gallery-grid {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.gallery-item {
+	width: 50%;
+}
+
+.gallery-item--full {
+	width: 100%;
+}
+
+.gallery-item figure {
+	background: white;
+	padding: 10px;
+	text-align: center;
+}

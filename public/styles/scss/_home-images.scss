@@ -1,0 +1,64 @@
+main .collections {
+    @include align-items(stretch);
+    @include display(flex);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(space-around);
+}
+
+main .collections .item {
+	margin-bottom: 10px;
+	padding: 6px;
+	width: 50%;
+	border-bottom: 1px solid #f0f0f0;
+	@include respond-to(sm) {
+		border-bottom: none;
+	}
+}
+
+main .collections .item.item--large {
+	width: 100%;
+}
+
+main .collections figure {
+	background: white;
+	margin: 0;
+	padding:0;
+	@include respond-to('sm') {
+		padding: 10px;
+		
+	}
+
+}
+
+main .collections {
+	h2 {
+		font-size: 1em;
+		text-align: center;
+		margin: 8px 0 10px 0;
+	}
+}
+
+aside .recent {
+    @include align-items(stretch);
+    @include display(flex);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(space-around);
+}
+
+aside {
+	h2 {
+		font-size: 1em;
+	}
+}
+
+aside .recent li {
+	width: 33%;
+	@include respond-to('ss') {
+		width: 25%;
+	}
+	@include respond-to('md') {
+		width: 100%;
+	}
+}

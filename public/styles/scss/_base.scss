@@ -1,0 +1,29 @@
+// Type
+
+html, body {
+	font-family:'DIN Next W01', 'Helvetica Neue', Helvetica, Arial;
+	font-size: 18px;
+	color: $color-textBlack;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 800;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 1.5em;
+	margin: 40px 0 20px 0;
+}
+
+.sr-only {
+	position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0
+}
+
+a {
+	color: $color-textBlack;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}

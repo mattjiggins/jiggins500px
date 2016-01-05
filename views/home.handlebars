@@ -1,0 +1,20 @@
+<main id="home">
+	<ul class="collections photo-list">
+	    {{#each allLeads}}
+	      <li class="{{list_classes}}">
+			  <figure>
+				<h2 class="sr-only">{{this.portfolio_title}}</h2>
+				<img src="{{this.image_url}}" alt="{{this.name}}" class="{{this.image_classes}}">
+				<figcaption>
+					<p class="title">{{this.name}}</p>
+					<p class="portfolio"><a href="/gallery/{{this.portfolio_custom_path}}">{{this.portfolio_title}} &rarr;</a></p>
+				</figcaption>
+			  </figure>
+		  </li>
+	    {{/each}}
+	</ul>
+</main>
+
+<aside>
+	{{> recent}}
+</aside>

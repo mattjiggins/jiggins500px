@@ -1,0 +1,21 @@
+<script type="text/javascript"  src="/scripts/min/gallery-min.js"></script>
+<script type="text/javascript">
+	docReady( function() {
+		var grid = document.querySelector('.gallery-grid');
+
+		var msnry = new Masonry( grid, {
+			itemSelector: '.gallery-item',
+			columnWidth: '.gallery-item',
+			percentPosition: true
+		});
+
+		imagesLoaded( grid, function() {
+			msnry.layout();
+		});
+	});
+</script>
+	
+<script type="text/javascript">
+	var lightbox = new Lightbox();
+	lightbox.load();
+</script>

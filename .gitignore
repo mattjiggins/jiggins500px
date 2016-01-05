@@ -1,0 +1,5 @@
+
+*.codekit
+node_modules/*
+*.scssc
+env
