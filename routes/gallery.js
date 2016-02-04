@@ -8,7 +8,6 @@ var api500 = require('../models/500px');
 router.get('/:gallery', function (req, res, next) {
 	
 	function grabGalleryItems(){
-		console.log("grabGallery");
 	    var deferred = Q.defer();
 		api500.galleries.getItems('14865555',req.params.gallery,{
 			sort:'position',
@@ -24,10 +23,7 @@ router.get('/:gallery', function (req, res, next) {
 	    return deferred.promise;
 	}
 	
-	
-	
 	function grabGallery(){
-		console.log("grabGalleryDetails");
 	    var deferred = Q.defer();
 		api500.galleries.getByID('14865555',req.params.gallery,{
 			sort:'position',

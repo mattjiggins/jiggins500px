@@ -1,0 +1,8 @@
+<div class="galleries-listing">
+	<h2>Galleries</h2>
+	<ul class="gallery-list">
+	    {{#each allCollections}}
+	      <li><a href="/gallery/{{this.custom_path}}">{{this.name}}</a></li>
+	    {{/each}}
+	</ul>
+</div>

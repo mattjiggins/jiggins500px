@@ -26,7 +26,7 @@ a:hover { text-decoration: underline; }
 @media (min-width: 992px) { main#gallery { float: left; display: block; margin-right: 2.3576515979%; width: 100%; }
   main#gallery:last-child { margin-right: 0; } }
 
-@media (min-width: 992px) { aside { float: left; display: block; margin-right: 2.3576515979%; width: 14.7019570017%; padding: 350px 10px 0 10px; }
+@media (min-width: 992px) { aside { float: left; display: block; margin-right: 2.3576515979%; width: 14.7019570017%; padding: 5px 10px 0 10px; }
   aside:last-child { margin-right: 0; } }
 
 nav { text-align: center; }
@@ -57,11 +57,25 @@ main .collections h2 { font-size: 1em; text-align: center; margin: 8px 0 10px 0;
 
 aside .recent { -webkit-box-align: stretch; -moz-box-align: stretch; box-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; -ms-align-items: stretch; -o-align-items: stretch; align-items: stretch; -ms-flex-align: stretch; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -moz-box-orient: horizontal; box-orient: horizontal; -webkit-box-direction: normal; -moz-box-direction: normal; box-direction: normal; -webkit-flex-direction: row; -moz-flex-direction: row; flex-direction: row; -ms-flex-direction: row; -webkit-box-lines: multiple; -moz-box-lines: multiple; box-lines: multiple; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: distribute; -moz-box-pack: distribute; box-pack: distribute; -webkit-justify-content: space-around; -moz-justify-content: space-around; -ms-justify-content: space-around; -o-justify-content: space-around; justify-content: space-around; -ms-flex-pack: distribute; }
 
-aside h2 { font-size: 1em; }
+aside h2 { font-size: 1.5em; text-align: center; }
+@media (min-width: 992px) { aside h2 { font-size: 1em; text-align: left; } }
 
 aside .recent li { width: 33%; }
 @media (min-width: 600px) { aside .recent li { width: 25%; } }
 @media (min-width: 992px) { aside .recent li { width: 100%; } }
+
+aside .galleries-listing { margin-bottom: 40px; float: left; display: block; margin-right: 2.3576515979%; width: 100%; text-align: center; margin-left: auto; margin-right: auto; }
+aside .galleries-listing:last-child { margin-right: 0; }
+@media (min-width: 992px) { aside .galleries-listing { text-align: left; } }
+
+aside .gallery-list { list-style: none; margin: 0; padding: 0; }
+aside .gallery-list li { float: left; font-size: .8em; padding: 10px; }
+aside .gallery-list li:hover { background: #f1f3f5; }
+@media (min-width: 768px) { aside .gallery-list li:hover { background: white; }
+  aside .gallery-list li:active { background: black; }
+  aside .gallery-list li:active a { color: white; } }
+@media (min-width: 992px) { aside .gallery-list li { float: none; }
+  aside .gallery-list li:hover { background: transparent; } }
 
 img.me { float: left; margin: 0 20px 20px 0; }
 

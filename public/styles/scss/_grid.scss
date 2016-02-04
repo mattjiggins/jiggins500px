@@ -26,6 +26,6 @@ main#gallery {
 aside {
 	@include respond-to('md') {
 		@include span-columns(2);
-		padding: 350px 10px 0 10px;
+		padding: 5px 10px 0 10px;
 	}
 }
