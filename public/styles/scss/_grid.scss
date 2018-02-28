@@ -1,10 +1,18 @@
 
 .container {
-	@include outer-container(900px);
+	// @include grid-container("900px");
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	&::after {
+		clear: both;
+		content: "";
+		display: block;
+	  }
 }
 .wrapper {
 	
-	@include span-columns(12);
+	@include grid-column(12);
 
 	padding: 0;
 
@@ -15,17 +23,17 @@
 }
 main {
 	@include respond-to('md') {
-		  @include span-columns(10);
+		  @include grid-column(10);
 	}
 }
 main#gallery {
 	@include respond-to('md') {
-		  @include span-columns(12);
+		  @include grid-column(12);
 	}
 }
 aside {
 	@include respond-to('md') {
-		@include span-columns(2);
+		@include grid-column(2);
 		padding: 5px 10px 0 10px;
 	}
 }

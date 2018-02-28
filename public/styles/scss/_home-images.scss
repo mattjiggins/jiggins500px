@@ -1,9 +1,14 @@
 main .collections {
-    @include align-items(stretch);
-    @include display(flex);
-    @include flex-direction(row);
-    @include flex-wrap(wrap);
-    @include justify-content(space-around);
+    // @include align-items(stretch);
+    // @include display(flex);
+    // @include flex-direction(row);
+    // @include flex-wrap(wrap);
+	// @include justify-content(space-around);
+	display: flex;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 main .collections .item {
@@ -38,11 +43,16 @@ main .collections {
 }
 
 aside .recent {
-    @include align-items(stretch);
-    @include display(flex);
-    @include flex-direction(row);
-    @include flex-wrap(wrap);
-    @include justify-content(space-around);
+    // @include align-items(stretch);
+    // @include display(flex);
+    // @include flex-direction(row);
+    // @include flex-wrap(wrap);
+	// @include justify-content(space-around);
+	display: flex;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 aside {
@@ -67,7 +77,7 @@ aside .recent li {
 }
 aside .galleries-listing {
 	margin-bottom: 40px;
-	@include span-columns(12);
+	@include grid-column(12);
 	text-align: center;
 	margin-left: auto; margin-right: auto;
 	@include respond-to('md') {
